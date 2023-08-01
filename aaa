@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="hero-text mt-5">
+        <h4>Hello, I'm</h4>
+        <h1>Adnan Fathoni</h1>
+        <h4>Frontend and Backend Developer</h4>
+      </div>
+        <img class="logo" src="assets/logo.png" alt="#" />
+
+    </section>
+    <section class="d-flex justify-content-center" id="about">
+      <div class="d-flex flex-column justify-content-center">
+        <img src="assets/logo.png" alt="#" width="400px" />
+      </div>
+      <div class="about-text d-flex flex-column justify-content-center">
+        <h1>About Me</h1>
+        <p>
+          Saya Adnan Fathoni, seorang pengembang perangkat lunak dengan minat
+          dalam pengembangan web dan aplikasi. Saya telah berpengalaman dalam
+          menciptakan berbagai proyek perangkat lunak menggunakan Laravel, HTML,
+          CSS, JavaScript, dan Bootstrap. Dengan kombinasi keahlian ini, saya
+          senang menghadirkan solusi web yang kreatif, responsif, dan
+          bermanfaat. Saya selalu terbuka untuk tantangan baru dan berharap
+          dapat berkontribusi dalam proyek-proyek web yang menarik dan
+          memberikan dampak positif.
+        </p>
+        <button class="btn btn-primary">more</button>
+      </div>
+    </section>
+    <section id="experience">
+      <h3>My Experience</h3>
+        <div class="mt-4 list-experience d-flex justify-content-center">
+          <div class="item-experince">
+            <h5 class="text-center">Frontend Developer</h5>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="item-experince">
+            <h5 class="text-center">Backend Developer</h5>
+            <ul>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>Laravel</li>
+              <li>CodeIgniter 4</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="job" >
+      <h3>Recent Project</h3>
+      <div class="list-job">
+          <div class="job-1">
+            <img src="" alt="">
+          <div>
+            <h3>Projek 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.</p>
+          </div>
+        </div>
+        <div class="job-1">
+          <img src="" alt="">
+          <div>
+            <h3>Projek 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.</p>
+          </div>
+        </div>
+        <div class="job-1">
+          <img src="" alt="">
+          <div>
+            <h3>Projek 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  </html> -->
+

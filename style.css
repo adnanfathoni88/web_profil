@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #26282b;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: #2a2c31;
+  padding: 0 10%;
+  color: #fff;
+}
+#hero {
+  background-color: #26282b;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.hero-text {
+  padding-top: 70px;
+  margin-left: 48px;
+}
+.hero-text h4 {
+  font-weight: 100;
+  margin: 0px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  margin-bottom: 0;
+}
+.logo {
+  width: 400px;
+  height: auto;
+  margin-bottom: 0px;
+}
+#about {
+  height: 80vh;
+  padding: 40px;
+}
+.about-text {
+  width: 50%;
+  margin-left: 48px;
+}
+#experience {
+  height: 60vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-experince {
+  background-color: #353941;
+  width: 300px;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+.card {
+  width: 18rem;
+  color: #fff;
+  background-color: #353941;
+}
+
+#job {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.job-1 {
+  background-color: #353941;
+  width: 300px;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+}
