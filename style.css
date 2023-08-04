@@ -16,6 +16,7 @@ header {
   z-index: 100;
   background-color: #2a2c31;
   color: #fff;
+  padding: 0 10%;
 }
 #hero {
   background-color: #26282b;
@@ -210,6 +211,13 @@ li::marker {
   color: #fff;
 }
 
+.job-title p {
+  opacity: 0.6 !important;
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
 #job .btn {
   background-color: #4f72c2;
   border-radius: 8px;
@@ -244,7 +252,7 @@ li::marker {
   background-color: #26282b;
   border-radius: 10px;
   margin: 0 10px;
-  padding: 20px;
+  height: 100%;
 }
 
 .job-list img {
@@ -254,10 +262,16 @@ li::marker {
 }
 
 .job-list h5 {
+  padding-top: 10px;
   color: #90b8f8;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   margin: 10px 0;
+}
+
+.job-list p {
+  opacity: 0.8;
+  margin: 0;
 }
 
 #form {
