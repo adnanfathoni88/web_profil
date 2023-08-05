@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
   background-color: #26282b;
@@ -347,4 +349,229 @@ footer {
 
 .icon a {
   color: #fff;
+}
+
+/* Add media queries for responsive design */
+/* Smaller screens */
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding: 0 5%;
+    width: 100%;
+    max-width: 100px  ;
+  }
+
+  .navbar-nav {
+    align-items: end;
+    padding: 0 5%;
+  }
+
+  .hero-text {
+    padding-top: 50px;
+    margin-left: 24px;
+  }
+
+  .hero-text h4 {
+    font-size: 18px;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  #about .container {
+    width: 100%;
+  }
+
+  .about img {
+    width: 150px;
+  }
+
+  .about-text {
+    width: 100%;
+    padding-top: 8%;
+  }
+
+  .table {
+    font-size: 16px;
+  }
+
+  .about-text .btn {
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  #experience .container {
+    width: 100%;
+  }
+
+  .card-experience {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  #job .container {
+    width: 100%;
+  }
+  #job .job-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap !important;
+  }
+  #job .btn {
+    width: 100%;
+  }
+  .job-list {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 5%;
+  }
+
+  .job-group .job-list {
+    width: 100%;
+  }
+
+  #form .container {
+    width: 80%;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-text {
+    padding-top: 60px;
+    margin-left: 32px;
+  }
+
+  .hero-text h4 {
+    font-size: 20px;
+  }
+
+  #hero h1 {
+    font-size: 48px;
+  }
+
+  .logo {
+    width: 350px;
+  }
+
+  #about .container {
+    width: 100%;
+  }
+
+  .about img {
+    width: 180px;
+    padding: 20px 0;
+  }
+
+  .about-img {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .table {
+    font-size: 18px;
+  }
+
+  .about-text .btn {
+    font-size: 20px;
+  }
+
+  #experience .container {
+    width: 100%;
+  }
+
+  .card-experience {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  #job .container {
+    width: 100%;
+  }
+
+  .job-group .job-list {
+    width: 100%;
+  }
+
+  #form .container {
+    width: 60%;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 992px) {
+  .hero-text {
+    padding-top: 70px;
+    margin-left: 48px;
+  }
+
+  .hero-text h4 {
+    font-size: 24px;
+  }
+
+  #hero h1 {
+    font-size: 64px;
+  }
+
+  .logo {
+    width: 400px;
+  }
+
+  #about .container {
+    width: 100%;
+  }
+
+  .about img {
+    width: 200px;
+  }
+
+  .table {
+    font-size: 20px;
+  }
+
+  .about-text .btn {
+    font-size: 24px;
+  }
+
+  #experience .container {
+    width: 80%;
+  }
+
+  .card-experience {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  #job .container {
+    width: 100%;
+  }
+
+  .job-group .job-list {
+    width: 30%;
+  }
+
+  #form .container {
+    width: 50%;
+  }
 }
