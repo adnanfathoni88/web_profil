@@ -351,21 +351,9 @@ footer {
   color: #fff;
 }
 
-/* Add media queries for responsive design */
-/* Smaller screens */
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;
-  }
-  header {
-    padding: 0 5%;
-    width: 100%;
-    max-width: 100px  ;
-  }
-
-  .navbar-nav {
-    align-items: end;
-    padding: 0 5%;
   }
 
   .hero-text {
@@ -408,6 +396,12 @@ footer {
     padding: 10px 20px;
   }
 
+  #experince .row,
+  #job .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   #experience .container {
     width: 100%;
   }
@@ -441,6 +435,7 @@ footer {
 
   .job-group .job-list {
     width: 100%;
+    margin-bottom: 5%;
   }
 
   #form .container {
@@ -511,7 +506,9 @@ footer {
   }
 
   #form .container {
-    width: 60%;
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
