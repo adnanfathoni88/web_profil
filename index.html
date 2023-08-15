@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="#">Portofolio</a>
+      <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column align-items-center">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <i class="bi bi-burger" ></i>
+          <div class="navbar-nav ">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#form">Contact</a>
+          </div>
+      </div>
+    </nav>
+  </header>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,30 +39,25 @@
 
     <title>Portofolio | Adnan Fathoni</title>
   </head>
-   <body>
-    <div class="popup mt-5">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum deserunt
-        labore voluptatem libero tempora molestias error, minima sit eos
-        corporis nesciunt necessitatibus quidem voluptatibus voluptate vero
-        asperiores, exercitationem illum repudiandae?
-      </p>
-    </div>
-
+  <body>
     <section id="hero">
-      <div class="container pt-5">
-        <div class="row d-flex flex-column align-items-center">
+      <div class="container">
+        <div class="row">
           <div class="col-md-12">
-            <div class="hero-text py-5 animate__animated animate__fadeInUp" >
+            <div class="py-5 animate__animated animate__fadeInUp" >
               <h4 >Hello, I'm</h4>
               <h1>Adnan Fathoni</h1>
               <h4>Frontend and Backend Developer</h4>
+              <div class="mt-5">
+                <a href="#about" class="btn" data-aos="fade-up">About Me</a>
+              </div>
             </div>
         </div>
       </div>
     </section>
-
-    <section id="about" class="py-5">
+    
+    <section id="about" class="">
+      <div class="row py-5">
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
@@ -60,7 +72,7 @@
               </div>
             </div>
             <div class="col-md-8">
-              <div class="about-text px-4 py">
+              <div class="about-text py">
                 <p>
                   I am Adnan Fathoni, a software developer with interest in web
                   and app development. I have Experienced in making various
@@ -93,6 +105,8 @@
           </div>
         </div>
       </div>
+      </div>
+
     </section>
 
     <section id="experience">
@@ -103,7 +117,7 @@
           <div
             class="card-experience frontend col-sm-5 text-center py-4"
             data-aos="fade-right"
-          >
+          > 
             <h5 class="mb-3">Frontend</h5>
             <div class="d-flex justify-content-start mx-5">
               <div>
@@ -143,7 +157,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
     <section id="job">
       <div class="row">
@@ -155,7 +169,7 @@
                 Recent Projects
               </h4>
             </div>
-            <div class="job-group row mx-2 my-5 text-center">
+            <div class="job-group row my-5 text-center">
               <div class="job-list col-sm-3 px-4 py-4 text-start" data-aos="fade-up">
                 <div class="mb-3">
                   <img src="assets/job-1.png" alt="#" />
@@ -185,11 +199,11 @@
         </div>
       </div>
     </section>
+
     <section id="form">
       <div class="row">
         <div class="container py-5">
             <h4 class="text-center pb-3" data-aos="zoom-out-up">Contact Me</h4>
-
             <div class="icon d-flex justify-content-center pb-5" data-aos="zoom-in" >
               <a href="https://github.com/adnanfathoni88">
                 <i class="bi bi-github" ></i>
@@ -212,12 +226,12 @@
       AOS.init();
     </script>
     <script>
-    $(document).ready(function() {
-      $(".navbar-toggler").click(function() {
-        $(".navbar-nav").toggle();
+      $(document).ready(function () {
+        $(".navbar-toggler").click(function () {
+          $(".navbar-nav").toggle("active");
+          $("body").toggleClass("active-nav");
+        });
       });
-    });
-  </script>
+    </script>
   </body>
-
 </html>

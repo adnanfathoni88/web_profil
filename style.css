@@ -21,11 +21,12 @@ header {
   padding: 0 10%;
 }
 #hero {
+  height: 100vh;
   background-color: #26282b;
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   align-items: center;
 }
@@ -45,6 +46,29 @@ header {
   margin-bottom: 0;
   color: #90b8f8;
   font-weight: 600;
+}
+#hero .btn {
+  background-color: #4f72c2;
+  border-radius: 8px;
+  padding: 10px 16px;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 10%;
+}
+
+.btn-pasive {
+  background-color: #4f72c2;
+  border-radius: 8 px;
+  padding: 10px 16px;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 10%;
 }
 
 .hero-text h1 {
@@ -352,13 +376,38 @@ footer {
 }
 
 @media (max-width: 767px) {
+  header .container {
+    display: flex;
+    justify-content: end;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   body {
     overflow-x: hidden;
   }
 
+  #hero .btn {
+    width: 50%;
+  }
+
+  #hero {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #hero {
+    height: 70vh;
+  }
+
+  header {
+    padding: 0 5%;
+    width: 100%;
+    max-width: 100%;
+  }
+
   .hero-text {
-    padding-top: 50px;
-    margin-left: 24px;
+    text-align: center;
   }
 
   .hero-text h4 {
@@ -372,9 +421,10 @@ footer {
   .logo {
     width: 300px;
   }
-
-  #about .container {
-    width: 100%;
+  #about .row,
+  #abot .container {
+    margin: 0;
+    padding: 0;
   }
 
   .about img {
@@ -382,6 +432,7 @@ footer {
   }
 
   .about-text {
+    text-align: justify;
     width: 100%;
     padding-top: 8%;
   }
@@ -396,17 +447,21 @@ footer {
     padding: 10px 20px;
   }
 
-  #experince .row,
   #job .row {
     margin-left: 0;
     margin-right: 0;
   }
 
+  #experience .row {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
   #experience .container {
     width: 100%;
   }
 
   .card-experience {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -428,18 +483,14 @@ footer {
     width: 100%;
   }
   .job-list {
-    width: 100%;
     padding-bottom: 20px;
     margin-bottom: 5%;
   }
 
-  .job-group .job-list {
-    width: 100%;
-    margin-bottom: 5%;
-  }
-
-  #form .container {
-    width: 80%;
+  #form .container,
+  #form .row {
+    padding: 0;
+    margin: 0;
   }
 }
 
