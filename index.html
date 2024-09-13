@@ -1,23 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
-  <div class="container d-flex justify-content-between align-items-center">
-    <a class="navbar-brand" href="#">Portofolio</a>
-    <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column align-items-center">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <i class="bi bi-burger"></i>
-      <div class="navbar-nav ">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#experience">Experience</a>
-        <a class="nav-link" href="#form">Contact</a>
-      </div>
-  </div>
-  </nav>
-</header>
 
 <head>
   <meta charset="UTF-8" />
@@ -28,196 +10,293 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
   <title>Portofolio | Adnan Fathoni</title>
 </head>
 
-<body>
+<body class="position-relative">
+
+  <nav class="bg-custom-dark position-fixed w-100" style="z-index: 9999;">
+    <div class="container py-4 d-flex justify-content-between align-items-center">
+      <div>
+        <h5 class="fw-normal text-white opacity-75">
+          My Portofolio
+        </h5>
+      </div>
+
+      <div class="nav-group text-white">
+        <li class="nav-item py-1 px-3 rounded-2"><a href="#about">About</a></li>
+        <li class="nav-item py-1 px-3 rounded-2"><a href="#experience">Skills</a></li>
+        <li class="nav-item py-1 px-3 rounded-2"><a href="#jobs">Projects</a></li>
+        <li class="nav-item py-1 px-3 rounded-2"><a href="#form">Contact</a></li>
+      </div>
+
+      <div class="nav-toggler">
+        <button class="btn text-white bg-custom-dark" onclick="handleNav()">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- hero -->
   <section id="hero">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="py-5 animate__animated animate__fadeInUp">
-            <h4>Hello, I'm</h4>
-            <h1>Adnan Fathoni</h1>
-            <h4>Frontend and Backend Developer</h4>
-            <div class="mt-5">
-              <a href="#about" class="btn" data-aos="fade-up">About Me</a>
+          <div class="py-5">
+            <div data-aos="fade-up" data-aos-duration="1000">
+              <h4 class="opacity-50">Hello, I'm</h4>
+              <h1 class="text-custom-secondary fw-semibold">Adnan Fathoni</h1>
+              <h4 class="opacity-50">Frontend and Backend Developer</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1300" class="mt-5">
+              <a href="#about" class="btn-custom">About Me</a>
             </div>
           </div>
         </div>
       </div>
   </section>
 
-  <section id="about" class="">
-    <div class="row py-5">
-      <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="4000">
-        <div class="about py-5">
-          <h4 class="text-center pb-4">About Me</h4>
-          <div class="row d-flex justify-content-center pb-5">
-            <div class="col-md-3 text-center">
-              <div class="about-img">
-                <img src="assets/pass-foto.jpg" alt="#" />
-              </div>
+  <!-- about -->
+  <section id="about">
+    <div class="container py-5">
+      <div class="about py-5" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="text-custom-secondary fw-semibold text-center pb-4">About Me</h1>
+        <div class="row d-flex justify-content-center ">
+          <div class="col-md-3 text-center  ">
+            <div class="about-img">
+              <img src="assets/pass-foto.jpg" alt="#" />
             </div>
-            <div class="col-md-8">
-              <div class="about-text py">
-                <p>
-                  I am Adnan Fathoni, a software developer with interest in web
-                  and app development. I have Experienced in making various
-                  device projects software using Laravel, HTML, CSS, JavaScript,
-                  and Bootstrap.
-                </p>
-                <table class="table table-borderless">
-                  <tbody>
-                    <tr>
-                      <td>Name</td>
-                      <td class="col-right">Adnan Fathoni</td>
-                    </tr>
-                    <tr>
-                      <td>Age</td>
-                      <td class="col-right">20 th</td>
-                    </tr>
-                    <tr>
-                      <td>Address</td>
-                      <td class="col-right">D.I. Yogyakarta, Indonesia</td>
-                    </tr>
-                    <tr>
-                      <td>Email</td>
-                      <td class="col-right">katmanfatahoni@gmail.com</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <a href="#form" class="btn">Contact Me</a>
+          </div>
+          <div class="col-md-8">
+            <div class="about-text">
+              <p class="lh-lg opacity-75">
+                I am a student at Amikom University Yogyakarta with a strong interest in the world of programming. I
+                have knowledge and experience in HTML, CSS, JavaScript, PHP, and the Laravel Framework,
+                React, Bootstrap, and Tailwind. I have the ability to adapt quickly, discipline and problem solve
+                solving
+              </p>
+              <table class="table text-white fs-6 table-borderless">
+                <tbody>
+                  <tr>
+                    <td class="opacity-75">Name</td>
+                    <td class="opacity-50">Adnan Fathoni</td>
+                  </tr>
+                  <tr>
+                    <td class="opacity-75">Age</td>
+                    <td class="opacity-50">21 th</td>
+                  </tr>
+                  <tr>
+                    <td class="opacity-75">Address</td>
+                    <td class="opacity-50">D.I. Yogyakarta, Indonesia</td>
+                  </tr>
+                  <tr>
+                    <td class="opacity-75">Email</td>
+                    <td class="opacity-50">katmanfatahoni@gmail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="mt-4">
+                <a href="#form" class="btn-custom">Contact Me</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
+  <!-- experience -->
   <section id="experience">
     <div class="container py-5">
-      <p class="text-center py-0" data-aos="zoom-out-up">What can i do</p>
-      <h4 class="text-center" data-aos="zoom-out-up">Experience</h4>
-      <div class="row d-flex justify-content-center py-5 mx-2">
-        <div class="card-experience frontend col-sm-5 text-center py-4" data-aos="fade-right">
-          <h5 class="mb-3">Frontend</h5>
-          <div class="d-flex justify-content-start mx-5">
-            <div>
-              <ul class="text-start px-4">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
+      <p data-aos="fade-up" data-aos-duration="1000" class="text-center py-0">What can i do</p>
+      <h1 class="fw-semibold text-custom-secondary text-center" data-aos="fade-up" data-aos-duration="1500">Skills</h1>
+      <div class="skill-group mx-auto w-75 d-flex justify-content-center flex-wrap">
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex  justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/html.png" alt="">
+          <p>HTML</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/css.png" alt="">
+          <p>CSS</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/js.png" alt="">
+          <p>JS</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/bootstrap.png" alt="">
+          <p>Bootstrap</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/tailwind.png" alt="">
+          <p>Tailwind</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/react.png" alt="">
+          <p>React</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/php.png" alt="">
+          <p>PHP</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/laravel.png" alt="">
+          <p>Laravel</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/mysql.png" alt="">
+          <p>MySQL</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/ci.png" alt="">
+          <p>Codeigniter</p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000"
+          class="card-experience d-flex justify-content-between gap-2 flex-column" style="width: 100px;">
+          <img src="./assets/icon/github.png" alt="">
+          <p>Github</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="jobs">
+    <div class="container">
+      <div class="job-header row">
+        <div class="col-12 text-center text-white">
+          <p data-aos="fade-up" data-aos-duration="1000">What did i make</p>
+          <h1 class="text-custom-secondary fw-semibold" data-aos="fade-up" data-aos-duration="1500">
+            Recent Projects
+          </h1>
+        </div>
+      </div>
+      <div class="text-white" style="padding: 24px 0px;">
+        <div class="jobs-group d-flex justify-content-between flex-wrap">
+
+          <!-- graha toyota -->
+          <div data-aos="fade-up" data-aos-duration="1000" class="jobs-item rounded-3 p-4">
+            <div class="jobs-item-img">
+              <img class="rounded-2" src="assets/job-graha-toyota.png" alt="#" />
             </div>
-            <div>
-              <ul class="text-start">
-                <li>Bootstrap</li>
-                <li>Tailwind</li>
-                <li>React</li>
-              </ul>
+            <div class="jobs-body mt-2">
+              <div class="jobs-title">
+                <h5>E-Commerce Graha Toyota - Fullstack</h5>
+                <p class="opacity-50">Menggunakan Laravel dan bootstrap
+              </div>
+              <div class="jobs-footer d-flex gap-2">
+                <a href="https://grahatoyota.co.id/" style="text-decoration: none;" class="btn">Demo</a>
+                <!-- <a href="#" class="btn">Github</a> -->
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card-experience backend col-sm-5 text-center py-4" data-aos="fade-left">
-          <h5 class="mb-3">Backend</h5>
-          <div class="d-flex justify-content-start mx-5">
-            <div>
-              <ul class="text-start px-4">
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>MySQL</li>
-              </ul>
+
+          <!-- sujud company -->
+          <div data-aos="fade-up" data-aos-duration="1000" class="jobs-item rounded-3 p-4">
+            <div class="jobs-item-img">
+              <img class="rounded-2" src="assets/job-sujud.png" alt="#" />
             </div>
-            <div>
-              <ul class="text-start">
-                <li>CodeIgniter 4</li>
-                <li>Github</li>
-              </ul>
+            <div class="jobs-body mt-2">
+              <div class="jobs-title">
+                <h5>E-Commerce SUJUD - Frontend</h5>
+                <p class="opacity-50">Menggunakan Laravel, Tailwind, React, dan REST API
+              </div>
+              <div class="jobs-footer d-flex gap-2">
+                <!-- <a href="https://grahatoyota.co.id/" class="btn">Demo</a> -->
+                <a href="https://github.com/adnanfathoni88/sujud_e_commerce-laravel" class="btn">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- pos -->
+          <div data-aos="fade-up" data-aos-duration="1000" class="jobs-item rounded-3 p-4">
+            <div class="jobs-item-img">
+              <img class="rounded-2" src="assets/job-pos.png" alt="#" />
+            </div>
+            <div class="jobs-body mt-2">
+              <div class="jobs-title">
+                <h5>POS APP</h5>
+                <p class="opacity-50">Menggunakan Laravel dan bootstrap
+              </div>
+              <div class="jobs-footer d-flex gap-2">
+                <!-- <a href="https://grahatoyota.co.id/" class="btn">Demo</a> -->
+                <a href="https://github.com/adnanfathoni88/cashier_app-react" class="btn">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- fashion -->
+          <div data-aos="fade-up" data-aos-duration="1000" class="jobs-item rounded-3 p-4">
+            <div class="jobs-item-img">
+              <img class="rounded-2" src="assets/job-fashion.png" alt="#" />
+            </div>
+            <div class="jobs-body mt-2">
+              <div class="jobs-title">
+                <h5>Fashion Landing Page</h5>
+                <p class="opacity-50">Menggunakan Tailwind
+              </div>
+              <div class="jobs-footer d-flex gap-2">
+                <a href="https://fashion-e1b.pages.dev/" class="btn">Demo</a>
+                <a href="https://github.com/adnanfathoni88/fashion-landing_page" class="btn">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- greenmind -->
+          <div data-aos="fade-up" data-aos-duration="1000" class="jobs-item rounded-3 p-4">
+            <div class="jobs-item-img">
+              <img class="rounded-2" src="assets/greenmind.png" alt="#" />
+            </div>
+            <div class="jobs-body mt-2">
+              <div class="jobs-title">
+                <h5>GREENMIND Landing Page</h5>
+                <p class="opacity-50">Menggunakan Tailwind
+              </div>
+              <div class="jobs-footer d-flex gap-2">
+                <a href="https://greenmind-landing-page.pages.dev/" class="btn">Demo</a>
+                <a href="https://github.com/adnanfathoni88/greenmind-landing_page" class="btn">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- megamart -->
+          <div data-aos="fade-up" data-aos-duration="1000" class="jobs-item rounded-3 p-4">
+            <div class="jobs-item-img">
+              <img class="rounded-2" src="assets/megaMart.png" alt="#" />
+            </div>
+            <div class="jobs-body mt-2">
+              <div class="jobs-title">
+                <h5>MegaMart Landing Page</h5>
+                <p class="opacity-50">Menggunakan Tailwind
+              </div>
+              <div class="jobs-footer d-flex gap-2">
+                <a href="https://megamart-web.pages.dev/" class="btn">Demo</a>
+                <a href="https://github.com/adnanfathoni88/MegaMart-landing_page" class="btn">Github</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
-  <section id="job">
-    <div class="row">
-      <div class="container my-5">
-        <div class="col-md-12">
-          <div class="job-title">
-            <p class="text-center " data-aos="zoom-out-up">What did i make</p>
-            <h4 class="text-center" data-aos="zoom-out-up">
-              Recent Projects
-            </h4>
-          </div>
-          <div class="job-group row my-2 text-center">
-            <div class="job-list col-sm-3 px-4 py-4 text-start" data-aos="fade-up">
-              <div class="mb-3">
-                <img src="assets/job-graha-toyota.png" alt="#" />
-              </div>
-              <h5>E-Commerce Graha Toyota - Fullstack</h5>
-              <p>Menggunakan Laravel dan bootstrap</p>
-            </div>
-            <div class="job-list col-sm-3 px-4 py-4 text-start" data-aos="fade-up">
-              <div class="mb-3">
-                <img src="assets/job-sujud.png" alt="#" />
-              </div>
-              <h5>E-Commerce SUJUD - Frontend</h5>
-              <p>Menggunakan Laravel, Tailwind, React, dan REST API</p>
-            </div>
-            <div class="job-list col-sm-3 px-4 py-4 text-start" data-aos="fade-up">
-              <div class="mb-3">
-                <img src="assets/job-pos.png" alt="#" />
-              </div>
-              <h5>POS APP</h5>
-              <p>Menggunakan React dan JSON-SERVER</p>
-            </div>
-          </div>
-          <div class="job-group row my-2 text-center">
-            <div class="job-list col-sm-3 px-4 py-4 text-start" data-aos="fade-up">
-              <div class="mb-3">
-                <img src="assets/job-1.png" alt="#" />
-              </div>
-              <h5>Pengelolaan Kos</h5>
-              <p>Menggunakan Laravel dan bootstrap</p>
-            </div>
-            <div class="job-list col-sm-3 px-4 py-4 text-start" data-aos="fade-up">
-              <div class="mb-3">
-                <img src="assets/job-2.png" alt="#" />
-              </div>
-              <h5>Perpustakaan Digital</h5>
-              <p>Menggunakan Laravel dan mdb bootstrap</p>
-            </div>
-            <div class="job-list col-sm-3 px-4 py-4 text-start" data-aos="fade-up">
-              <div class="mb-3">
-                <img src="assets/job-3.png" alt="#" />
-              </div>
-              <h5>Perpustakaan Digital</h5>
-              <p>Menggunakan CI4</p>
-            </div>
-          </div>
-          <div class="job-group row my-2 text-center">
-            <div class="job-list col-sm-3 px-4 py-4 text-start" data-aos="fade-up">
-              <div class="mb-3">
-                <img src="assets/job-fashion.png" alt="#" />
-              </div>
-              <h5>Web Fashion</h5>
-              <p>Menggunakan Tailwind</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- footer -->
   <section id="form">
     <div class="row">
       <div class="container py-5">
-        <h4 class="text-center pb-3" data-aos="zoom-out-up">Contact Me</h4>
+        <h1 class="text-custom-secondary fw-semibold text-center pb-3" data-aos="fade-up">Contact Me</h1>
         <div class="icon d-flex justify-content-center pb-5" data-aos="zoom-in">
           <a href="https://github.com/adnanfathoni88">
             <i class="bi bi-github"></i>
@@ -233,19 +312,24 @@
     </div>
     </div>
   </section>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
   <script>
-    $(document).ready(function () {
-      $(".navbar-toggler").click(function () {
-        $(".navbar-nav").toggle("active");
-        $("body").toggleClass("active-nav");
-      });
-    });
+    function handleNav() {
+      const navGroup = document.querySelector('.nav-group');
+      if (navGroup.style.display === 'none') {
+        navGroup.style.display = 'flex';
+      } else {
+        navGroup.style.display = 'none';
+      }
+    }
+
   </script>
 </body>
 
