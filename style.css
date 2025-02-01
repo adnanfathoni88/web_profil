@@ -13,6 +13,7 @@
   --light-color: #fff;
 }
 
+/* overflow x */
 .text-custom-primary {
   color: var(--primary-color);
 }
@@ -201,6 +202,39 @@ body {
 #experience p {
   opacity: 0.6;
   margin: 0;
+}
+
+/* work experience */
+#work_experience {
+  padding: 50px 0px;
+  background-color: var(--dark-color-2);
+}
+
+.work_experience_item {
+  width: 100%;
+  padding: 0px 24px;
+  margin-bottom: 20px;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.work-experience-item {
+  width: calc(100% / 3 - 12px);
+  margin-bottom: 20px;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.img_work_experience_item {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.img-work-sujud {
+  filter: invert(1);
 }
 
 /* jobs */
