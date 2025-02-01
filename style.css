@@ -598,6 +598,14 @@ footer {
     padding: 0;
     margin: 0;
   }
+  .work_experience_item {
+    width: 90%;
+  }
+
+  .work_experience_head {
+    display: flex;
+    flex-direction: column !important;
+  }
 }
 
 /* Medium screens */
@@ -679,6 +687,14 @@ footer {
     margin-left: 0;
     margin-right: 0;
   }
+  .work_experience_item {
+    width: 90%;
+  }
+
+  .work_experience_head {
+    display: flex;
+    flex-direction: column !important;
+  }
 }
 
 /* Larger screens */
@@ -731,5 +747,13 @@ footer {
 
   #form .container {
     width: 50%;
+  }
+  .work_experience_item {
+    width: 90%;
+  }
+
+  .work_experience_head {
+    display: flex;
+    flex-direction: column !important;
   }
 }
